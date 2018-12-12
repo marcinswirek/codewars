@@ -17,14 +17,14 @@
 //Solution
 function narcissistic(value) {
   const nToArray = value.toString().split('');
- const nPower = nToArray.length;
- let number = 0;
- let result = 0;
- nToArray.forEach(num => {
-   num = num * 1;
-   number = Math.pow(num, nPower);
-   result += number;
- });
- console.log(result);
- return result === value ? true : false;
+  const nPower = nToArray.length;
+  let number = 0;
+  let result = 0;
+  nToArray.forEach(num => {
+    num = num * 1;
+    number = Math.pow(num, nPower);
+    result += number;
+  });
+  console.log(result);
+  return result === value ? true : false;
 }
